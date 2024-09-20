@@ -2,11 +2,12 @@
 import random
 def main():
     '''pep9'''
-    error=5
-    score=0
-    while error >=0 :
+    error=24
+    score=41
+    while score <=72 :
         proba=random.randint(100,999)
-        print(f" {proba} * 999 = ")
+        print(f"{score}.) {proba} * 999 = ")
+        '''
         answer_user=int(input("your answer : "))
         if answer_user != proba * 999 :
             error-=1
@@ -15,4 +16,6 @@ def main():
             score+=1
             print("correct answer, heart = ",error, ", score = ", score)
     print("game over")
+    ''' 
+        score += 1
 main()
